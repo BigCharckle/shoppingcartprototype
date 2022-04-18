@@ -1,6 +1,7 @@
 import React from "react";
 const Dropdown = ({ label, value, options, onChange }) => {
     return (
+      <div>
       <label>
         <h3>{label}:    
         <select value={value} onChange={onChange}>
@@ -10,6 +11,7 @@ const Dropdown = ({ label, value, options, onChange }) => {
         </select> 
         </h3>
       </label>
+      </div>
     );
   };
   export default Dropdown;

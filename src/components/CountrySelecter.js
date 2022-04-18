@@ -12,10 +12,10 @@ const CountrySelecter = (props) => {
   });
   return (
     <div>
-      <Dropdown className=""
+      <Dropdown 
         label="Select your country"
         options={options}
-        value={currentCountry.country}
+        value={currentCountry.name}
         onChange={handleChange}
       />
       <p><h3>You are using currency: {currentCountry.currency}</h3></p>

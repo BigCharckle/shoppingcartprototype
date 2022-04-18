@@ -6,14 +6,14 @@
     price: faker.commerce.price(),
     image: faker.random.image(),
   }));     */
- const countries = [{ country:'Australia', currency: 'AUD', rate: '1.00'},
-                    { country:'United States', currency: 'USD', rate: '0.742'},
-                    { country:'Japan', currency: 'JPY', rate: '21.00'},
+ const countries = [{ name:'Australia', currency: 'AUD', rate: '1.00'},
+                    { name:'United States', currency: 'USD', rate: '0.742'},
+                    { name:'Japan', currency: 'JPY', rate: '21.00'},
                     ];  
 
 
 const defaultCountry =  countries.find((c)=>c.currency  === 'AUD');       
-const Api_products = "http://localhost:18959/product";
+const API_PRODUCTS = "http://localhost:18959/product";
 const API_LOCAL_COUNTRIES = "http://localhost:18959/country";
 const API_LOCAL_SHIPPINGPRICE = "http://localhost:18959/shoppingcart/shippingprice";
 const API_LOCAL_CHECKOUT = "http://localhost:18959/shoppingcart/checkout";
@@ -22,7 +22,7 @@ const API_LOCAL_CHECKOUT = "http://localhost:18959/shoppingcart/checkout";
 
        
 const Apisource = { countries: countries, defaultCountry: defaultCountry, 
-  Api_products, API_LOCAL_COUNTRIES,API_LOCAL_SHIPPINGPRICE,API_LOCAL_CHECKOUT 
+  API_PRODUCTS, API_LOCAL_COUNTRIES,API_LOCAL_SHIPPINGPRICE,API_LOCAL_CHECKOUT 
 };
 
 

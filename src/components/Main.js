@@ -15,7 +15,7 @@ export default function Main(props){
         const response = await (
         //fetch("https://fakerapi.it/api/v1/products?_quantity=20&_price_max=100&_seed=88"));
         //fetch("https://dummyjson.com/products"));
-        fetch(Apisource.Api_products));
+        fetch(Apisource.API_PRODUCTS));
         const data = await response.json();
 
         setProducts(data);
