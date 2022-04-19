@@ -38,7 +38,7 @@ function App() {
     }
   };
   const onChangeCountry = (event) => {
-    const found = countries.find((x) =>x.country === event.target.value);
+    const found = countries.find((x) =>x.name === event.target.value);
     setCurrentCountry({...found});
   };
   const onSubmitOrder = () =>{
